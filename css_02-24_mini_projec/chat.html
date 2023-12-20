@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+    content="withd=device-width, initial-scale=1.0">
+    <title>채팅방 만들기</title>
+    <link href="chat.css" rel="stylesheet">
+    <link href="text.css" rel="stylesheet">
+    <style>
+        .chat-screen__texts{
+            height: 830px;
+            overflow: scroll;
+            border: 1px solid #ccc;
+            padding: auto;
+        }
+        .chat-container{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+        .chat-form{
+            margin-top: 10px;
+        }
+        .chat-form__field{
+            display: flex;
+        }
+        .chat-form_msg{
+            flex: 1;
+            margin-right: 10px;
+        }
+        .bottom-bar{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+        }
+        .chat-screen__texts li:not(:last-child) {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="chat-screen">
+            <section class="chat-screen__bar">
+            <div class="user">
+                <div class="user__column">
+                     <div class="user__pic"></div>
+                     </div>     
+                <div class="user__column">
+                    <p class="user__nick">친구</p>
+                    <p class="user__count">2</p>
+                </div>
+            </div>
+        </section>
+        <ul class="chat-screen__texts">
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+            <li class="texts">친구야 반가워</li>
+            <li class="texts">우리 언제 밥이나 한번 먹자</li>
+        </ul>
+        </main>
+        <form class="chat-form">
+            <section class="chat-form__field">
+                <textarea class="chat-form_msg"></textarea>
+                <input type="submit" value="전송" class="chat-form__bt">
+            </section>
+        </form>
+    </div>
+</body>
+</html> 
